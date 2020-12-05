@@ -1,5 +1,9 @@
 # pangeo-forge-website
 
+<http://pangeo-for.ge>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cd6f6579-12c7-44a7-8bf5-eeb07efbce7f/deploy-status)](https://app.netlify.com/sites/boring-cray-12a607/deploys)
+
 ## Project setup
 ```
 npm install
