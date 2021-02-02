@@ -1,0 +1,38 @@
+name: Build and Deploy to Netlify 
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   if: github.repository == 'pangeo-forge/pangeo-forge-vue-website'
+   defaults:
+      run:
+        shell: bash
+   steps:
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.7.0
+        with:
+          access_token: ${{ github.token }}
+      - uses: actions/checkout@v2
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.1.13
+        with:
+          publish-dir: './dist'
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: true
+          enable-commit-comment: false
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
