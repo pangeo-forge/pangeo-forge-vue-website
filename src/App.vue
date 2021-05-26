@@ -49,22 +49,26 @@
             A cloud-native data repository for ocean, weather, and climate science.
           </h2>
         </div>
-        <SearchBar />
+        <!-- disable search bar and stats until we actually have content -->
+        <!-- <SearchBar /> -->
       </div>
     </section>
-    <Stats />
+    <About />
+    <!-- <Stats /> -->
   </div>
 </template>
 
 <script>
-import Stats from './components/Stats.vue'
-import SearchBar from './components/SearchBar.vue'
+// import Stats from './components/Stats.vue'
+// import SearchBar from './components/SearchBar.vue'
+import About from './components/About.vue'
 
 export default {
   name: 'App',
   components: {
-    Stats,
-    SearchBar
+    About,
+    // Stats,
+    // SearchBar
   }
 }
 </script>
