@@ -31,7 +31,7 @@
                 </a>
                 <span class="navbar-item">
                   <a class="button is-primary is-inverted"
-                      href="https://github.com/pangeo-forge/pangeo-forge-recipes/">
+                      href="https://github.com/pangeo-forge">
                     <span class="icon">
                       <i class="mdi mdi-github mdi-24px"></i>
                     </span>
