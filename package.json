@@ -8,6 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "stac-browser": "github:radiantearth/stac-browser#stac-index",
+    "@openeo/vue-components": "^2.3.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@mdi/font": "^5.8.55",
