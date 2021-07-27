@@ -17,20 +17,21 @@
             </div>
             <div id="navbarMenuHeroA" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item is-active">
+                <a class="navbar-item is-active" href="https://pangeo-forge.org">
                   Home
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/recipe_box.html">
                   Recipes
                 </a>
                 <a class="navbar-item">
                   Catalog
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/">
                   Documentation
                 </a>
                 <span class="navbar-item">
-                  <a class="button is-primary is-inverted">
+                  <a class="button is-primary is-inverted"
+                      href="https://github.com/pangeo-forge">
                     <span class="icon">
                       <i class="mdi mdi-github mdi-24px"></i>
                     </span>
