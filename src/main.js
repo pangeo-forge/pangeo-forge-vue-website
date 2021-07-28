@@ -11,7 +11,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import App from './App.vue'
 
 // const URL = (HTTPS ? 'https://' : 'http://') + HTTP_HOST + (!HTTPS && HTTP_PORT != 80 ? ':' + HTTP_PORT : '') + HTTP_PATH;
-const URL = 'https://raw.githubusercontent.com/cisaacstern/pangeo-forge-catalog/adjust-for-browser/stac/swot-adac/GIGATL/Region01/surface/fma.json'
+const URL = 'https://raw.githubusercontent.com/cisaacstern/pangeo-forge-catalog/reorg/stac/pangeo-forge-catalog.json'
 
 Vue.use(Buefy)
 
