@@ -96,7 +96,7 @@ export default {
         this.data = response.data;
         if (this.data.access !== 'private') {
           let createBrowser = require('stac-browser/src/main').default;
-          let url = this.data.url;
+          let url = this.data.links[0].href; // assumes {"rel": "self"} is first object in array
           /*
           if (url.startsWith('http://')) {
             url = this.makeProxyUrl(url);
