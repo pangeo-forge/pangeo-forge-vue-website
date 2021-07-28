@@ -23,7 +23,7 @@
                 <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/recipe_box.html">
                   Recipes
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="https://pangeo-forge.org/catalog">
                   Catalog
                 </a>
                 <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/">
