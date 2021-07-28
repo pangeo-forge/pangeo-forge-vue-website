@@ -85,7 +85,8 @@ export default {
   },
   async mounted() {
     try {
-      let endpoint = (this.data ? '/collections/' : '/catalogs/') + this.id
+      // let endpoint = (this.data ? '/collections/' : '/catalogs/') + this.id
+      let endpoint = this.data
       let response = await this.$axios.get(endpoint);
       if (!isPlainObject(response.data)) {
         this.data = "Information retrieved from the server are invalid.";
@@ -96,10 +97,11 @@ export default {
         if (this.data.access !== 'private') {
           let createBrowser = require('stac-browser/src/main').default;
           let url = this.data.url;
+          /*
           if (url.startsWith('http://')) {
             url = this.makeProxyUrl(url);
             this.isHttp = true;
-          }
+          }*/
           try {
             let response = await this.$axios.get(url, {
               timeout: 1000,
