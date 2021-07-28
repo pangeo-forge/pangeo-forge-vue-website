@@ -1,19 +1,19 @@
 import Vue from 'vue'
+import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 import '@mdi/font/css/materialdesignicons.css' // <-- Just here
-import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
+// import Buefy from 'buefy'
+// import 'buefy/dist/buefy.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
-import App from './App.vue'
 
 // const URL = (HTTPS ? 'https://' : 'http://') + HTTP_HOST + (!HTTPS && HTTP_PORT != 80 ? ':' + HTTP_PORT : '') + HTTP_PATH;
 const URL = 'https://raw.githubusercontent.com/cisaacstern/pangeo-forge-catalog/reorg/stac/pangeo-forge-catalog.json'
 
-Vue.use(Buefy)
+// Vue.use(Buefy)
 
 Vue.config.productionTip = false
 
