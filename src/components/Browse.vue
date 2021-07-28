@@ -1,5 +1,15 @@
 <template>
   <b-container fluid class="browse content">
+    <div>
+      <br>
+      <b-alert variant="danger" show>
+        <p>
+          👋 <strong>Hello!</strong> This is a development version of the Pangeo Forge
+          <a href="https://stacspec.org/"> STAC Catalog</a>.
+          Content and styling are under 🚧 active construction 🚧. Please check back soon for updates.
+        </p>
+      </b-alert>
+    </div>
     <b-spinner v-if="data === null" label="Loading..."></b-spinner>
     <b-alert v-else-if="typeof data === 'string'" variant="danger" show>{{ data }}</b-alert>
     <b-container v-else>
