@@ -119,7 +119,7 @@ export default {
           await createBrowser(url, this.$router.path);
         }
         else {
-          document.title = this.data.title + " - STAC Index";
+          document.title = this.data.title + " - Pangeo Forge";
         }
       }
     } catch (error) {
