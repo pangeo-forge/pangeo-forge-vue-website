@@ -155,15 +155,31 @@ blockquote {
 
 <style>
 @media (min-width: 1900px) {
-  .browse .container, .browse .container {
+.browse .container, .browse .container {
       max-width: 1600px;
   }
 }
+
+.content ol,
+.content ul {
+    margin-left: 0;
+}
+
 .browse .loaded {
   padding: 0;
   font-size: 0.95em;
 }
 .browse a.btn-outline-dark:hover {
   color: #fff;
+}
+.browse .metadata td.title {
+    font-size: 1em;
+}
+
+.tabs a,
+.tabs a:hover {
+    float: left;
+    color: #007bff;
+    text-decoration: none;
 }
 </style>
