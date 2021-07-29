@@ -11,7 +11,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 
 // const URL = (HTTPS ? 'https://' : 'http://') + HTTP_HOST + (!HTTPS && HTTP_PORT != 80 ? ':' + HTTP_PORT : '') + HTTP_PATH;
-const URL = 'https://raw.githubusercontent.com/cisaacstern/pangeo-forge-catalog/reorg/stac/pangeo-forge-catalog.json'
+const URL = 'https://raw.githubusercontent.com/pangeo-forge/pangeo-forge-catalog/dev/stac/pangeo-forge-catalog.json'
 
 // Vue.use(Buefy)
 
