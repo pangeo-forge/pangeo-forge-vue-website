@@ -23,7 +23,7 @@
                 <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/recipe_box.html">
                   Recipes
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" href="https://pangeo-forge.org/catalog">
                   Catalog
                 </a>
                 <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/">
@@ -54,25 +54,13 @@
         <!-- <SearchBar /> -->
       </div>
     </section>
-    <About />
+    <!-- <About /> -->
+      <main>
+        <router-view/>
+      </main>
     <!-- <Stats /> -->
   </div>
 </template>
-
-<script>
-// import Stats from './components/Stats.vue'
-// import SearchBar from './components/SearchBar.vue'
-import About from './components/About.vue'
-
-export default {
-  name: 'App',
-  components: {
-    About,
-    // Stats,
-    // SearchBar
-  }
-}
-</script>
 
 <style lang="scss">
 @import "./scss/pangeo-style.scss";
