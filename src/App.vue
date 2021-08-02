@@ -26,7 +26,7 @@
                 <a class="navbar-item" href="https://pangeo-forge.org/catalog">
                   Catalog
                 </a>
-                <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/">
+                <a class="navbar-item" href="https://pangeo-forge.org/docs">
                   Documentation
                 </a>
                 <span class="navbar-item">
