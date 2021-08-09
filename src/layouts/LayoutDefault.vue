@@ -17,15 +17,11 @@
             </div>
             <div id="navbarMenuHeroA" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item is-active" href="https://pangeo-forge.org">
-                  Home
-                </a>
+                <router-link class="navbar-item" to="/">Home</router-link>
                 <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/recipe_box.html">
                   Recipes
                 </a>
-                <a class="navbar-item" href="https://pangeo-forge.org/catalog">
-                  Catalog
-                </a>
+                <router-link class="navbar-item" to="/catalog">Catalog</router-link>
                 <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/">
                   Documentation
                 </a>
