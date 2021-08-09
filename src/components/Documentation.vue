@@ -21,25 +21,27 @@
     </div>
     <div class="content" id="organization">
         <h3 class="title is-3">How the documentation is organized</h3>
-        <p>There are a number of places to access resources when working with components of Pangeo
-        Forge.  Here is an overview of what you will find:</p>
+        <h3 class="title is-3">How the documentation is organized</h3>
+        <p>The <a href="https://pangeo-forge.readthedocs.io/en/latest/">Pangeo Forge Recipes documentation</a>
+            is the primary resource for learning about ecosystem-level concepts.  Here is where you will find 
+            the Introdcution Tutorial or more in depth technical descrdiptions of the Pangeo Forge architecture.</p>
+        <p>Within the ecosystem, Pangeo Forge is made up of many individual repositories. The primary 
+            repositories each have their own set of documentation and are listed in the next section.
+        <p>Generally, each repository documentation page will contain:</p>
         <ul>
-            <li>The <strong>Introduction Tutorial</strong> is the place to start with Pangeo Forge.
-            It walks the user through the process of getting setup with their first data transformation.</li>
-            <li><strong>Guides</strong> explain core Pangeo Forge concepts in detail. They provide
-            background information to aid in gaining a depth of understanding.</li>
-            <li><strong>API Reference Pages</strong> are the technical descriptions of the repositories
+            <li><strong>Tutorials</strong>: for gettting you started with a particular task or concept</li>
+            <li><strong>Guides</strong>: for explaining core Pangeo Forge concepts in detail. They provide
+            background information to aid in gaining a depth of understanding or step by step
+            instructions for common tasks.</li>
+            <li><strong>API Reference Pages</strong>: the technical descriptions of the repositories
             that make up Pangeo Forge. They are useful when you want to review a particular
-            funcationality in depth, but assume you already have a working knowledge of the code base.</li>
+            funcationality in depth, but they assume you already have a working knowledge of the code base.</li>
         </ul>
-        <p>While the overview information and intruduction tutorial can be found on the current website,
-        guides and reference pages are locations the documentation pages for theie respective Pangeo 
-        Forge repository.  Links to those pages are listed in the next section.</p>
         <hr class="solid">
     </div>
     <div class="content" id="repositories">
         <h3 class="title is-3">Repository reference</h3>
-        <p>There are many respositories that make up Pangeo Forge. Here are links to the different
+        <p>There are many respositories that make up Pangeo Forge. Here are links to several of the primary
             documentation pages:</p>
         <ul>
             <li><code>pangeo-forge-recipes</code> - Guides | Reference</li>
