@@ -55,7 +55,11 @@
             <li>recipe contributors — contributors who write recipes to define the data conversions.  This can be anyone with a desire to create analysis ready cloud-optimized (ARCO) data</li>
             <li>bakery maintainers — contributors who deploy bakeries on cloud infrastructure to process and host the transformed data. This is typically an organization with a grant to fund the infrastructure</li>
         </ol>
-
+<blockquote>
+The safety and security of all community members is our top priority.
+Please familiarize yourself with our
+<a href="https://github.com/pangeo-forge/roadmap/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>.
+</blockquote>
         <p>If you are new to Pangeo Forge and looking to get involved, we suggest getting started with recipe
         contribution.  You can do in two ways:</p>
         <ol>
