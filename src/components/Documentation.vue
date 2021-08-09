@@ -44,7 +44,8 @@
         <ul>
             <li><code>pangeo-forge-recipes</code> - Guides | Reference</li>
             <li><code>pangeo-forge-azure-bakery</code> - Guides | Reference</li>
-            <li><code>pangeo-forge-aws-bakery</code> - Guides | Reference</li>
+            <li><code>staged-recipes</code> - Guides | Reference</li>
+            <li><code>pangeo-forge-catalog</code> - Guides | Reference</li>
         </ul>
         <hr class="solid">
     </div>
