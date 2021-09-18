@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../components/Home.vue'
 import Browse from '../components/Browse.vue'
+import Documentation from '../components/Documentation.vue'
 // import NotFound from '../components/NotFound.vue'
 
 Vue.use(VueRouter)
@@ -14,7 +15,11 @@ const routes = [
   {
       path: '/catalog',
       component: Browse
-  }/*,
+  },
+  {
+    path: '/docs',
+    component: Documentation
+  },/*,
   {
     path: '*',
     component: NotFound

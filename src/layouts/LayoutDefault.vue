@@ -22,9 +22,7 @@
                   Recipes
                 </a>
                 <router-link class="navbar-item" to="/catalog">Catalog</router-link>
-                <a class="navbar-item" href="https://pangeo-forge.readthedocs.io/en/latest/">
-                  Documentation
-                </a>
+                <router-link class="navbar-item" to="/docs">Documentation</router-link>
                 <span class="navbar-item">
                   <a class="button is-primary is-inverted"
                       href="https://github.com/pangeo-forge">
