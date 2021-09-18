@@ -22,9 +22,9 @@
     </div>
     <div class="content" id="organization">
         <h3 class="title is-3">How the documentation is organized</h3>
-        <p>Pangeo Forge is made up of many interdependent repositories, but the 
+        <p>Pangeo Forge is made up of many interdependent repositories, but the
             <a href="https://pangeo-forge.readthedocs.io/en/latest/">Pangeo Forge Recipes documentation</a>
-            is the primary resource for learning about ecosystem-level concepts.  Here is where you will find 
+            is the primary resource for learning about ecosystem-level concepts.  Here is where you will find
             the Introduction Tutorial or more in-depth technical descriptions of the Pangeo Forge architecture.
             This documentation also contains User Guides and Reference Pages for creating recipes.</p>
         <hr class="solid">
@@ -63,7 +63,12 @@ Please familiarize yourself with our
 </template>
 
 <script>
-    export default {
-        name: 'DocHome',
-    }
+import LayoutDefault from '../layouts/LayoutDefault.vue';
+
+export default {
+  name: 'DocHome',
+  created() {
+    this.$emit('update:layout', LayoutDefault);
+  },
+}
 </script>
