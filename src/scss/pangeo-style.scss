@@ -80,3 +80,29 @@ $link-focus-border: $primary;
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+@import url('http://fonts.cdnfonts.com/css/panton-black-caps');
+
+h1 {
+    font-family: "Panton Black Caps", sans-serif;
+    color: $primary;
+}
+
+h2 {
+    font-family: "Panton Light Caps", sans-serif;
+    color: $primary;
+}
+
+h3 {
+    color: $primary;
+}
+
+a {
+    color: $link;
+}
+
+
+/* .highlight { font-size: 125%; } */
+.highlight .c1 { color: #e50051; }
+.highlight .si { color: #e50051; }
+.highlight .nn { color: #e50051; }
