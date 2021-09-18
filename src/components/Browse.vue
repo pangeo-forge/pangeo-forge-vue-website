@@ -50,10 +50,15 @@
 </template>
 
 <script>
+import LayoutDefault from '../layouts/LayoutDefault.vue';
 import isPlainObject from 'lodash/isPlainObject';
 import { Description } from '@openeo/vue-components';
+
 export default {
   name: 'Browse',
+  created() {
+    this.$emit('update:layout', LayoutDefault);
+  },
   components: {
     Description
   },
@@ -143,6 +148,8 @@ export default {
     }
   }
 }
+
+
 </script>
 
 <style scoped>

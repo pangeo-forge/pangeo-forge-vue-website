@@ -1,6 +1,5 @@
 <template>
   <section class="section" id="stats">
-
     <div class="columns is-mobile is-centered">
       <div class="column is-three-quarters-tablet is-half-desktop has-text-centered">
         <div class="block">
@@ -18,12 +17,16 @@
           </div>
       </div>
     </div>
-
   </section>
 </template>
 
 <script>
-    export default {
-        name: 'About',
-    }
+import LayoutHero from '../layouts/LayoutHero.vue';
+
+export default {
+    name: 'Home',
+    created() {
+      this.$emit('update:layout', LayoutHero);
+    },
+}
 </script>
