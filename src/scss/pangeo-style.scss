@@ -2,12 +2,14 @@
 
 // Set your colors
 $primary: #322173;
-$link: #e50051;
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
+
+$link: #5eb130;
+$link-invert: findColorInvert($link);
 
 // Lists and maps
 $custom-colors: null !default;
@@ -72,35 +74,17 @@ $colors: mergeColorMaps(
     $custom-colors
 );
 
-// Links
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
+
+$title-color:	#003b71;
+$title-family: "Panton Black Caps", sans-serif;
+$subtitle-color:	#003b71;
+$subtitle-family: "Panton Light Caps", sans-serif;
 
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 
 @import url('http://fonts.cdnfonts.com/css/panton-black-caps');
-
-h1 {
-    font-family: "Panton Black Caps", sans-serif;
-    color: $primary;
-}
-
-h2 {
-    font-family: "Panton Light Caps", sans-serif;
-    color: $primary;
-}
-
-h3 {
-    color: $primary;
-}
-
-a {
-    color: $link;
-}
-
 
 /* .highlight { font-size: 125%; } */
 .highlight .c1 { color: #e50051; }
