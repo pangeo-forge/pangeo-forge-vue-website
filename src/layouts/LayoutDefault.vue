@@ -3,6 +3,8 @@
     <section class="hero is-primary is-bold">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
+
+
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
@@ -36,6 +38,7 @@
             </div>
           </div>
         </nav>
+
       </div>
       <slot name="hero" />
     </section>
@@ -47,8 +50,7 @@
   </div>
 </template>
 
-<style lang="scss">
-@import "../scss/pangeo-style.scss";
+<style lang="css">
 
 // banner image
 img#logo {
@@ -56,3 +58,26 @@ img#logo {
 }
 
 </style>
+
+<script>
+import $ from 'jquery'
+
+export default {
+  name: 'Layout',
+  mounted () {
+    // https://bulma.io/documentation/components/navbar/
+    $(document).ready(function() {
+
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function() {
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          $(".navbar-burger").toggleClass("is-active");
+          $(".navbar-menu").toggleClass("is-active");
+
+      });
+    });
+  }
+}
+
+</script>
