@@ -1,14 +1,21 @@
 @import "~bulma/sass/utilities/_all";
 
+// Pangeo Colors
+$dark-blue:	#003b71;
+$pangeo-green: #5eb130;
+$teal: #00a3b0;
+$dark-purple:	#322173;
+$pink: #e50051;
+
 // Set your colors
-$primary: #322173;
+$primary: $dark-purple;
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
 
-$link: #5eb130;
+$link: $pangeo-green;
 $link-invert: findColorInvert($link);
 
 // Lists and maps
@@ -75,10 +82,12 @@ $colors: mergeColorMaps(
 );
 
 
-$title-color:	#003b71;
+$title-color:	$dark-blue;
 $title-family: "Panton Black Caps", sans-serif;
-$subtitle-color:	#003b71;
+$subtitle-color:	$dark-blue;
 $subtitle-family: "Panton Light Caps", sans-serif;
+
+$navbar-item-hover-background-color: $teal;
 
 // Import Bulma and Buefy styles
 @import "~bulma";
