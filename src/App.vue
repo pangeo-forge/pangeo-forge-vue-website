@@ -9,6 +9,10 @@ https://markus.oberlehner.net/blog/dynamic-vue-layout-components/
   </component>
 </template>
 
+<style lang="scss">
+@import "scss/pangeo-style.scss";
+</style>
+
 <script>
 export default {
   name: 'App',

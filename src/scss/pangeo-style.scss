@@ -1,13 +1,22 @@
 @import "~bulma/sass/utilities/_all";
 
+// Pangeo Colors
+$dark-blue:	#003b71;
+$pangeo-green: #5eb130;
+$teal: #00a3b0;
+$dark-purple:	#322173;
+$pink: #e50051;
+
 // Set your colors
-$primary: #322173;
-$link: #e50051;
+$primary: $dark-purple;
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
+
+$link: $pangeo-green;
+$link-invert: findColorInvert($link);
 
 // Lists and maps
 $custom-colors: null !default;
@@ -72,11 +81,16 @@ $colors: mergeColorMaps(
     $custom-colors
 );
 
-// Links
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
+
+$title-color:	$dark-blue;
+$title-family: "Panton Black Caps", sans-serif;
+$subtitle-color:	$dark-blue;
+$subtitle-family: "Panton Light Caps", sans-serif;
+
+$navbar-item-hover-background-color: $teal;
 
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+@import url('http://fonts.cdnfonts.com/css/panton-black-caps');
