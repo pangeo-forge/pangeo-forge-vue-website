@@ -41,12 +41,13 @@
 
       </div>
       <slot name="hero" />
+
     </section>
     <!-- <About /> -->
       <main>
         <slot/>
       </main>
-    <!-- <Stats /> -->
+
   </div>
 </template>
 
