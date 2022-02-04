@@ -25,14 +25,31 @@
 
 
 <script>
+
+import axios from 'axios';
+
 export default {
   name: 'Stats',
   data: function () {
     return {
-      feedstocks: 10,
-      recipes: 20,
-      datasets: 30
+      feedstocks: "-",
+      recipes: "-",
+      datasets: "-",
+      loading: true,
+      errored: false
     }
+  },
+  mounted () {
+  axios
+    .get('http://api-staging.pangeo-forge.org/stats/recipe_runs')
+    .then(response => {
+      this.recipes = response.data.count
+    })
+    .catch(error => {
+      console.log(error)
+      this.errored = true
+    })
+    .finally(() => this.loading = false)
   }
 }
 </script>
