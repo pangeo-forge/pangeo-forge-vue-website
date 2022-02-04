@@ -41,7 +41,7 @@ export default {
   },
   mounted () {
   axios
-    .get('http://api-staging.pangeo-forge.org/stats/recipe_runs')
+    .get('https://api-staging.pangeo-forge.org/stats/recipe_runs')
     .then(response => {
       this.recipes = response.data.count
     })
