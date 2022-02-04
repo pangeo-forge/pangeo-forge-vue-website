@@ -11,6 +11,7 @@
         <!-- disable search bar and stats until we actually have content -->
         <!-- <SearchBar /> -->
       </div>
+      <Stats />
     </template>
     <slot />
   </layout-default>
@@ -19,11 +20,13 @@
 
 <script>
 import LayoutDefault from './LayoutDefault.vue';
+import Stats from '../components/Stats.vue'
 
 export default {
     name: 'Home',
     components: {
       LayoutDefault,
+      Stats
     },
 };
 </script>
